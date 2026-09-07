@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>R$Y的专属回忆</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Simsun", "宋体", sans-serif;
+      background: url(img/0.jpg) center;
+      background-attachment: fixed;
+      color: #333;
+      padding: 20px 0;
+    }
+
+    .header {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 10px 0;
+      text-align: center;
+      color: #4ea9fe;
+      font-family: SimSun;
+      font-size: 28px;
+    }
+
+    .content {
+      position: relative;
+      width: 300px;
+      min-height: 300px;
+    }
+
+    .art {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0%;
+      left: 15%;
+    }
+
+    .audio {
+      width: 300px;
+      height: 60px;
+      position: absolute;
+      top: 68%;
+      left: 0%;
+    }
+
+    .buth {
+      width: 50px;
+      height: 30px;
+      position: absolute;
+      top: 87%;
+      left: 40%;
+    }
+
+    .love-list {
+      border-collapse: collapse;
+      background: #FF999980;
+      width: 90%;
+      max-width: 1200px;
+      height: 50px;
+      margin: 20px auto;
+      border: 2px solid #ff6666;
+      border-radius: 20px;
+    }
+
+    .love-list th,
+    .love-list td {
+      border: 1px solid #ff6666;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .img-F {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .img-F img {
+      width: 90%;
+      max-width: 400px;
+      height: auto;
+      border: 2px solid #ffffff;
+      margin: 10px;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .img-F img.loaded {
+      opacity: 1;
+    }
+
+    .img-F cite,
+    .img-F p {
+      margin: 10px 0;
+      color: #111;
+    }
+
+    .mid {
+      height: 120px;
+      margin: 0 auto;
+      font-size: 21px;
+      padding: 40px;
+      color: #111111;
+    }
+
+    .txat {
+      width: 209px;
+      height: 170px;
+      margin: 0 auto;
+    }
+
+    .end {
+      width: 200px;
+      height: 24px;
+      margin: 0 auto;
+      text-align: center;
+      color: #FF9999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+      欢迎观看R先生和Y小姐的回忆
+    </h1>
+  </div>
+
+  <div class="content">
+    <div class="art">
+      <img src="img/3.jpg" alt="" width="200" height="200" />
+    </div>
+
+    <div class="audio">
+      <audio id="audio1" src="audio/碎碎念 - 队长.mp3" loop="false" controls autoplay></audio>
+      <audio id="audio2" src="audio/徐秉龙、沈以诚 - 白羊.mp3" loop="false">
+      </audio>
+    </div>
+
+    <div class="buth">
+      <button id="playNextBtn">下一首</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <table class="love-list">
+    <tr>
+      <th>我们开始的日期</th>
+      <th>我们相爱的时间</th>
+    </tr>
+    <tr>
+      <td><time datetime="2023-09-16">2023年9月16日</time></td>
+      <td id="loveDays"></td>
+    </tr>
+  </table>
+
+  <hr>
+  <div class="img-F">
+    <a href="img/1.jpg" target="_blank">
+      <img src="img/1.jpg" alt="富家千金大小姐beauty photo" loading="lazy" onload="this.classList.add('loaded')" title="重生之千金小姐">
+    </a>
+
+    <img src="img/1.jpg" alt="重生之千金小姐" loading="lazy" onload="setTimeout(()=>{this.classList.add('loaded')},500)">
+    
+    <p>
+      <cite>优美的图片</cite>
+    </p>
+    <p>
+      往往产生于人类的奇思妙想
+    </p>
+  </div>
+
+  <div class="img-F">
+    <img src="img/8.jpg" alt="豪门大少" loading="lazy" onload="this.classList.add('loaded')">
+  </div>
+
+  <hr>
+
+  <div class="mid">
+    <marquee>
+      <h2>
+        <font face="SimSun">欢迎光顾R和Y的网页</font>
+      </h2>
+    </marquee>
+  </div>
+
+  <hr>
+
+  加载进度：
+  <progress value="25" max="100"></progress>
+
+  <div class="img-F">
+    <img src="img/4.jpg" alt="蝴蝶结下的富家千金" loading="lazy" onload="this.classList.add('loaded')">
+    <img src="img/4.jpg" alt="蝴蝶结下的富家千金" loading="lazy" onload="setTimeout(()=>{this.classList.add('loaded')},500)">
+  </div>
+
+  <hr>
+  加载进度：
+  <progress value="50" max="100"></progress>
+
+  <div class="img-F">
+    <img src="img/5.jpg" alt="千金大小姐之自拍" loading="lazy" onload="this.classList.add('loaded')">
+    <img src="img/5.jpg" alt="千金大小姐之自拍" loading="lazy" onload="setTimeout(()=>{this.classList.add('loaded')},500)">
+  </div>
+
+  <hr>
+  加载进度：
+  <progress value="75" max="100">
+  </progress>
+
+  <div class="img-F">
+    <img src="img/6.jpg" alt="‘赛里木湖’之旅" loading="lazy" onload="this.classList.add('loaded')">
+    <img src="img/6.jpg" alt="‘赛里木湖’之旅" loading="lazy" onload="setTimeout(()=>{this.classList.add('loaded')},500)">
+  </div>
+
+  <hr>
+  <div class="txat">
+    <label for="message" class="sr-only">留言内容</label>
+    <textarea id="message" name="message" title="留言内容" placeholder="请输入留言内容" rows="10" cols="28">
+    “我口袋只剩玫瑰一片，此行又山高路远”
+                                  -薛之谦《小尖尖》    
+    </textarea>
+  </div>
+  加载进度：
+  <progress value="100" max="100">
+  </progress>
+  <hr>
+  <div class="end">
+    <p>饶家恺 ❤️ 钱薛滢</p>
+  </div>
+
+  <script>
+    const audio1 = document.getElementById('audio1');
+    const audio2 = document.getElementById('audio2');
+    const playNextBtn = document.getElementById('playNextBtn');
+    const audioList = [audio1, audio2];
+    let currentIndex = 0;
+
+    async function playAudio(audio) {
+      if (!audio) return;
+      try {
+        await audio.play();
+      } catch (e) {
+        console.log('播放失败:', e);
+        const tip = document.createElement('div');
+        tip.style.cssText = 'color: #ff6666; font-size: 12px; margin-top: 4px;';
+        tip.innerText = '💡 需点击音频控件授权播放哦～';
+        audio.parentNode.appendChild(tip);
+        setTimeout(() => tip.remove(), 3000);
+      }
+    }
+
+    function playNextAudio() {
+      audioList[currentIndex].pause();
+      audioList[currentIndex].currentTime = 0;
+      currentIndex = (currentIndex + 1) % audioList.length;
+      playAudio(audioList[currentIndex]);
+    }
+
+    audioList.forEach(audio => {
+      audio.addEventListener('ended', playNextAudio);
+    });
+
+    playNextBtn.addEventListener('click', playNextAudio);
+
+    audioList.forEach(audio => {
+      audio.addEventListener('click', () => playAudio(audio), { once: true });
+    });
+  </script>
+
+  <script>
+    const startDate = new Date("2023-09-16T00:00:00");
+
+    if (isNaN(startDate.getTime())) {
+      document.getElementById("loveDays").innerText = "日期格式错误";
+    } else {
+      function calculateLoveDuration() {
+        const now = new Date();
+
+        const timeDiff = now - startDate;
+        const totalDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        let years = now.getFullYear() - startDate.getFullYear();
+        let months = now.getMonth() - startDate.getMonth();
+        let days = now.getDate() - startDate.getDate();
+
+        if (days < 0) {
+          months--;
+          const lastMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+          days += lastMonth.getDate();
+        }
+
+        if (months < 0) {
+          years--;
+          months += 12;
+        }
+
+        const formatNum = (num) => num.toString().padStart(2, '0');
+
+        const displayText = `${formatNum(years)} 年 ${formatNum(months)} 月 ${formatNum(days)} 天 总计 ${totalDays} 天`;
+
+        document.getElementById("loveDays").innerText = displayText;
+      }
+
+      calculateLoveDuration();
+      setInterval(calculateLoveDuration, 1000);
+    }
+  </script>
+</body>
+
+</html>
